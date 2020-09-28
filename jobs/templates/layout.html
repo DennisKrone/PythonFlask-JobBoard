@@ -4,7 +4,9 @@
 
 <head>
     <title>Job Board</title>
-    <link><a href="{{app.url_for(filename="static.css.bulma.min.css")}}""></a></link>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
 <body>
@@ -13,8 +15,8 @@
             {% block content %}
             {% endblock %}
         </div>
-        </div>
-        </body>
+    </div>
+</body>
 
 </html>
 
